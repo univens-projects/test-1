@@ -17,6 +17,11 @@
   dateEl.textContent = dateFmt.format(new Date());
   dateEl.style.visibility = "visible";
 
+  var yearEl = document.getElementById("year");
+  if (yearEl) {
+    yearEl.textContent = String(new Date().getFullYear());
+  }
+
   var nav = document.getElementById("nav");
   var menuBtn = document.getElementById("menuBtn");
   var mobileMenu = document.getElementById("mobileMenu");
@@ -38,6 +43,33 @@
 
   var revealEls = document.querySelectorAll("[data-reveal]");
 
+  var aboutVideo = document.querySelector(".about-video");
+  var videoToggle = document.querySelector(".video-toggle");
+
+  function updateVideoToggle() {
+    if (!videoToggle) return;
+    var paused = aboutVideo.paused;
+    videoToggle.classList.toggle("is-paused", paused);
+    videoToggle.setAttribute("aria-label", paused ? "Play video" : "Pause video");
+  }
+
+  if (aboutVideo) {
+    aboutVideo.playbackRate = 0.75;
+    aboutVideo.addEventListener("loadedmetadata", updateVideoToggle);
+    aboutVideo.addEventListener("play", updateVideoToggle);
+    aboutVideo.addEventListener("pause", updateVideoToggle);
+  }
+
+  if (aboutVideo && videoToggle) {
+    videoToggle.addEventListener("click", function () {
+      if (aboutVideo.paused) {
+        aboutVideo.play();
+      } else {
+        aboutVideo.pause();
+      }
+    });
+  }
+
   if ("IntersectionObserver" in window) {
     var observer = new IntersectionObserver(
       function (entries) {
@@ -58,4 +90,33 @@
       el.classList.add("visible");
     });
   }
+
+  var accordionGroups = [
+    document.querySelectorAll(".case-study"),
+    document.querySelectorAll(".faq-item")
+  ];
+
+  accordionGroups.forEach(function (items) {
+    items.forEach(function (item) {
+      var btn = item.querySelector(".case-study-toggle, .faq-toggle");
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        var isOpen = item.classList.contains("open");
+        items.forEach(function (other) {
+          if (other !== item) {
+            other.classList.remove("open");
+            var otherBtn = other.querySelector(".case-study-toggle, .faq-toggle");
+            if (otherBtn) otherBtn.setAttribute("aria-expanded", "false");
+          }
+        });
+        if (isOpen) {
+          item.classList.remove("open");
+          btn.setAttribute("aria-expanded", "false");
+        } else {
+          item.classList.add("open");
+          btn.setAttribute("aria-expanded", "true");
+        }
+      });
+    });
+  });
 })();

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -7,14 +8,17 @@
   <meta name="description" content="Clean and simple portfolio template for Framer.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Cactus+Classical+Serif&family=Geist+Mono:wght@400&family=Reddit+Mono:wght@400&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Cactus+Classical+Serif&family=Geist+Mono:wght@400&family=Reddit+Mono:wght@400&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header class="nav" id="nav">
     <div class="nav-inner">
       <div class="nav-left">
-        <a class="logo" href="./">0X—Crew®</a>
+        <a class="logo" href="./"><img class="logo-img nav-logo-img" src="public/logo-dark.svg" alt="0X—Crew"></a>
         <div class="nav-cluster">
           <div class="marquee" aria-hidden="true">
             <div class="marquee-track">
@@ -34,8 +38,8 @@
           </div>
           <div class="time-chip">
             <svg class="clock-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <circle cx="8" cy="8" r="6.6" stroke="#696969" stroke-width="1.4"/>
-              <path d="M8 4.6V8l2.4 1.3" stroke="#696969" stroke-width="1.4" stroke-linecap="round"/>
+              <circle cx="8" cy="8" r="6.6" stroke="#696969" stroke-width="1.4" />
+              <path d="M8 4.6V8l2.4 1.3" stroke="#696969" stroke-width="1.4" stroke-linecap="round" />
             </svg>
             <span class="time-text" id="clock">12:00 AM</span>
           </div>
@@ -44,24 +48,24 @@
       <div class="nav-right">
         <nav class="nav-tabs" aria-label="Primary">
           <a href="./#about">About</a>
-          <a href="./#awards">Awards</a>
+          <a href="./#case-studies">Work</a>
           <a href="./#services">Services</a>
         </nav>
         <a class="nav-pill" href="./contact">Contact</a>
       </div>
       <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
         <svg class="icon-burger" width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
-          <path d="M6 9.5h18M6 15h18M6 20.5h18" stroke="#000" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M6 9.5h18M6 15h18M6 20.5h18" stroke="#000" stroke-width="1.6" stroke-linecap="round" />
         </svg>
         <svg class="icon-close" width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
-          <path d="M8 8l14 14M22 8L8 22" stroke="#000" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M8 8l14 14M22 8L8 22" stroke="#000" stroke-width="1.6" stroke-linecap="round" />
         </svg>
       </button>
     </div>
     <div class="mobile-menu" id="mobileMenu">
       <nav class="mobile-links" aria-label="Mobile">
         <a href="./#about">About</a>
-        <a href="./#awards">Awards</a>
+        <a href="./#case-studies">Work</a>
         <a href="./#services">Services</a>
       </nav>
       <a class="mobile-contact" href="./contact">Contact</a>
@@ -88,10 +92,17 @@
     <section class="hero">
       <div class="hero-content">
         <div class="hero-left" data-reveal>
-          <h1 class="hero-title"><span class="hero-hey">Hey.</span> <span class="hero-line2">We design meaningful experiences that connect people and ideas worldwide.</span></h1>
-          <a class="btn-dark" href="./contact">Get in touch</a>
+          <h1 class="hero-title"><span class="hero-hey">The Future</span> <span class="hero-line2">Doesn’t Build
+              Itself</span></h1>
+
+          <p class="hero-sub" data-reveal>It's built by those who refuse to wait.</p>
+          <div class="hero-ctas">
+            <a class="btn-dark" href="./contact">Start a Conversation</a>
+            <a class="btn-light" href="./#services">Explore What We Do</a>
+          </div>
         </div>
-        <p class="hero-sub" data-reveal>We work closely with clients to design and develop digital experiences that not only look stunning but also deliver measurable results.</p>
+        <p class="hero-sub" data-reveal>Behind every ambitious business is the ability to align the right strategy,
+          technology, specialists, and execution. That's what Univens exists to orchestrate.</p>
         <div class="hero-avatars">
           <a class="avatar av-1" href="https://linkedin.com" target="_blank" rel="noopener">
             <img src="https://framerusercontent.com/images/EnP5OAvGhDlEWaHKl1lwzDWY.png" alt="Alexander">
@@ -109,6 +120,302 @@
       </div>
     </section>
 
+    <section class="about" id="about">
+      <div class="about-inner" data-reveal>
+        <div class="about-media">
+          <video class="about-video" src="public/about_video.mp4" autoplay muted loop playsinline
+            disablepictureinpicture aria-label="Univens — the team behind the work"></video>
+          <button class="video-toggle" type="button" aria-label="Pause video">
+            <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M7 5h3.2v14H7zM13.8 5H17v14h-3.2z"></path>
+            </svg>
+            <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M7 4.9l12 7.1-12 7.1V4.9z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="about-body">
+          <div class="section-label">
+            <span class="label-num">[01]</span>
+            <span>Who We Are</span>
+          </div>
+          <h2 class="section-h2">Ambition rarely stops at the idea.</h2>
+          <div class="about-text">
+            <p>A new product needs technology. A growing business needs systems. A new market needs execution. A
+              transformation needs people who can make it happen.</p>
+            <p>The requirement changes with the objective. Univens brings together the expertise, technology, and
+              execution required to move that objective forward.</p>
+            <p>We connect businesses with the right capabilities to turn strategic intent into working reality.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="solutions" id="solutions">
+      <div class="solutions-inner" data-reveal>
+        <div class="solutions-head">
+          <div class="section-label">
+            <span class="label-num">[02]</span>
+            <span>What we do</span>
+          </div>
+          <h2 class="section-h2">Whatever the objective requires, we bring together the capabilities to <em
+              class="h2-em">execute it.</em></h2>
+        </div>
+        <div class="solution-list">
+          <div class="solution-row" data-reveal>
+            <div class="solution-info">
+              <h3 class="solution-title">Digital Infrastructure</h3>
+              <p class="solution-desc">The systems businesses need to operate, communicate, acquire customers, and
+                scale.</p>
+            </div>
+            <ul class="solution-tags">
+              <li>Business websites</li>
+              <li>Digital platforms</li>
+              <li>Learning Management Systems</li>
+              <li>CRM systems</li>
+              <li>Business portals</li>
+              <li>Digital operational infrastructure</li>
+            </ul>
+          </div>
+          <div class="solution-row" data-reveal>
+            <div class="solution-info">
+              <h3 class="solution-title">Product Development</h3>
+              <p class="solution-desc">From business requirements to functional digital products.</p>
+            </div>
+            <ul class="solution-tags">
+              <li>Web applications</li>
+              <li>SaaS products</li>
+              <li>Custom platforms</li>
+              <li>APIs and integrations</li>
+              <li>Product development</li>
+              <li>Technical implementation</li>
+            </ul>
+          </div>
+          <div class="solution-row" data-reveal>
+            <div class="solution-info">
+              <h3 class="solution-title">AI &amp; Automation</h3>
+              <p class="solution-desc">Applying AI and automation where they can improve how a business works.</p>
+            </div>
+            <ul class="solution-tags">
+              <li>Workflow automation</li>
+              <li>AI-enabled processes</li>
+              <li>Intelligent business systems</li>
+              <li>Applied AI solutions</li>
+              <li>Process optimisation</li>
+            </ul>
+          </div>
+          <div class="solution-row" data-reveal>
+            <div class="solution-info">
+              <h3 class="solution-title">IoT &amp; Robotics</h3>
+              <p class="solution-desc">Connecting software, hardware, and intelligent systems to solve real
+                operational and industrial problems.</p>
+            </div>
+            <ul class="solution-tags">
+              <li>IoT solutions</li>
+              <li>Connected systems</li>
+              <li>Robotics</li>
+              <li>Industrial automation</li>
+              <li>Embedded technology solutions</li>
+            </ul>
+          </div>
+          <div class="solution-row" data-reveal>
+            <div class="solution-info">
+              <h3 class="solution-title">Marketing Systems</h3>
+              <p class="solution-desc">Building the systems and execution required to support sustainable digital
+                growth.</p>
+            </div>
+            <ul class="solution-tags">
+              <li>SEO</li>
+              <li>Digital marketing</li>
+              <li>Brand systems</li>
+              <li>Campaign execution</li>
+              <li>Marketing infrastructure</li>
+            </ul>
+          </div>
+          <div class="solution-row" data-reveal>
+            <div class="solution-info">
+              <h3 class="solution-title">Strategic Execution</h3>
+              <p class="solution-desc">Bringing the right specialists and capabilities together around one business
+                objective.</p>
+            </div>
+            <ul class="solution-tags">
+              <li>Technology consulting</li>
+              <li>Execution planning</li>
+              <li>Specialist coordination</li>
+              <li>Implementation support</li>
+              <li>Ongoing execution</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="process-inner" data-reveal>
+        <div class="process-head">
+          <div class="section-label">
+            <span class="label-num">[03]</span>
+            <span>How we work</span>
+          </div>
+          <h2 class="section-h2">We don’t start with a service. We start with <em class="h2-em">your
+              objective.</em></h2>
+          <p class="process-sub">No fixed packages. The technology, specialists, and scope are assembled around what
+            you’re actually trying to achieve — then we execute together.</p>
+        </div>
+        <div class="process-list">
+          <div class="process-step" data-reveal>
+            <span class="step-num">01</span>
+            <div class="step-body">
+              <h3 class="step-title">Share the objective</h3>
+              <p class="step-desc">Tell us what you’re trying to build, improve, launch, automate, or scale. That’s
+                where every engagement starts.</p>
+            </div>
+          </div>
+          <div class="process-step" data-reveal>
+            <span class="step-num">02</span>
+            <div class="step-body">
+              <h3 class="step-title">Map what it takes</h3>
+              <p class="step-desc">We assess what the objective really requires — technology, systems, specialists,
+                and execution — and what you may already have in place.</p>
+            </div>
+          </div>
+          <div class="process-step" data-reveal>
+            <span class="step-num">03</span>
+            <div class="step-body">
+              <h3 class="step-title">Assemble the team</h3>
+              <p class="step-desc">Specialists are brought in around the objective, never around a package. The right
+                combination moves it forward.</p>
+            </div>
+          </div>
+          <div class="process-step" data-reveal>
+            <span class="step-num">04</span>
+            <div class="step-body">
+              <h3 class="step-title">Execute together</h3>
+              <p class="step-desc">Project-based or ongoing monthly execution, working alongside your internal team,
+                consultants, or partners. You keep the decisions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-studies" id="case-studies">
+      <div class="case-studies-inner" data-reveal>
+        <div class="case-studies-head">
+          <div class="section-label">
+            <span class="label-num">[04]</span>
+            <span>Case studies.</span>
+          </div>
+        </div>
+        <div class="case-study-list">
+          <div class="case-study open" data-reveal>
+            <button class="case-study-toggle" type="button" aria-expanded="true" aria-controls="cs-panel-1">
+              <span class="case-study-top">
+                <span class="case-study-file">File 01 / 02</span>
+                <h3 class="case-study-name">Spruce Lifeskills</h3>
+              </span>
+              <span class="case-study-right">
+                <span class="case-study-status">Ongoing</span>
+                <svg class="case-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6 9.5l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+              </span>
+            </button>
+            <div class="case-study-panel" id="cs-panel-1">
+              <div class="case-panel-inner">
+                <div class="case-panel-body">
+                  <div class="case-meta">
+                    <div class="case-meta-item">
+                      <span class="case-meta-label">Status</span>
+                      <span class="case-meta-value">Ongoing</span>
+                    </div>
+                    <div class="case-meta-item">
+                      <span class="case-meta-label">Sector</span>
+                      <span class="case-meta-value">Education · Nagpur, IN</span>
+                    </div>
+                    <div class="case-meta-item">
+                      <span class="case-meta-label">Website</span>
+                      <span class="case-meta-value"><a href="https://www.sprucelifeskills.com" target="_blank"
+                          rel="noopener">www.sprucelifeskills.com</a></span>
+                    </div>
+                    <div class="case-meta-item">
+                      <span class="case-meta-label">Engagement</span>
+                      <span class="case-meta-value">MoM + Revenue Sharing</span>
+                    </div>
+                  </div>
+                  <p class="case-para"><strong>The challenge:</strong> Spruce Lifeskills has been operating through
+                    decentralised and largely manual processes across learning delivery, student management,
+                    administration, and institutional relationships.</p>
+                  <p class="case-para"><strong>Univens’s role:</strong> Long-term technology and strategic execution
+                    partner, helping to centralise operations and strengthen the infrastructure supporting its
+                    growth.</p>
+                  <div class="case-tags">
+                    <span>LMS</span><span>CRM integration</span><span>Centralised operations</span><span>IT
+                      infrastructure</span><span>HR &amp; recruitment</span><span>Partnership management</span>
+                  </div>
+                  <blockquote class="case-quote">“From technology infrastructure to recruitment and partnerships, this
+                    engagement extends beyond a single service because the business objective requires more than a
+                    single service.”</blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="case-study" data-reveal>
+            <button class="case-study-toggle" type="button" aria-expanded="false" aria-controls="cs-panel-2">
+              <span class="case-study-top">
+                <span class="case-study-file">File 02 / 02</span>
+                <h3 class="case-study-name">Zesh Agency</h3>
+              </span>
+              <span class="case-study-right">
+                <span class="case-study-status">Ongoing</span>
+                <svg class="case-chevron" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6 9.5l6 6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+              </span>
+            </button>
+            <div class="case-study-panel" id="cs-panel-2">
+              <div class="case-panel-inner">
+                <div class="case-panel-body">
+                  <div class="case-meta">
+                    <div class="case-meta-item">
+                      <span class="case-meta-label">Status</span>
+                      <span class="case-meta-value">Ongoing</span>
+                    </div>
+                    <div class="case-meta-item">
+                      <span class="case-meta-label">Sector</span>
+                      <span class="case-meta-value">Agency · Pune, IN</span>
+                    </div>
+                    <div class="case-meta-item">
+                      <span class="case-meta-label">Website</span>
+                      <span class="case-meta-value"><a href="https://www.zeshagency.com" target="_blank"
+                          rel="noopener">www.zeshagency.com</a></span>
+                    </div>
+                    <div class="case-meta-item">
+                      <span class="case-meta-label">Engagement</span>
+                      <span class="case-meta-value">MoM</span>
+                    </div>
+                  </div>
+                  <p class="case-para"><strong>The challenge:</strong> Zesh Agency works across creative, advertising,
+                    and digital marketing. Its client engagements often require dependable technical execution
+                    alongside strategy and creative work.</p>
+                  <p class="case-para"><strong>Univens’s role:</strong> IT and technical execution partner,
+                    delivering the technology requirements behind Zesh’s client engagements.</p>
+                  <div class="case-tags">
+                    <span>WordPress</span><span>Next.js</span><span>Headless CMS</span>
+                  </div>
+                  <blockquote class="case-quote">“Zesh focuses on its client relationships, strategy, and creative
+                    capabilities. Univens provides the technical execution required to deliver them.”</blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="btn-dark" href="./contact">Start a conversation</a>
+      </div>
+    </section>
+
     <section class="projects">
       <div class="projects-inner">
         <div class="projects-head" data-reveal>
@@ -118,7 +425,8 @@
         <div class="projects-grid">
           <a class="project-card" href="./portfolio/vaultpay" data-reveal>
             <div class="project-thumb">
-              <img src="https://framerusercontent.com/images/nJeHcntMKZzoj8uIkTSp5OhsmQ.png" alt="Vaultpay project" loading="lazy">
+              <img src="https://framerusercontent.com/images/nJeHcntMKZzoj8uIkTSp5OhsmQ.png" alt="Vaultpay project"
+                loading="lazy">
             </div>
             <div class="project-info">
               <h4 class="project-name">Vaultpay</h4>
@@ -130,7 +438,8 @@
           </a>
           <a class="project-card" href="./portfolio/greene" data-reveal>
             <div class="project-thumb">
-              <img src="https://framerusercontent.com/images/1lHHfD630VkAHkYim5mnAv2jhsw.png" alt="Greene project" loading="lazy">
+              <img src="https://framerusercontent.com/images/1lHHfD630VkAHkYim5mnAv2jhsw.png" alt="Greene project"
+                loading="lazy">
             </div>
             <div class="project-info">
               <h4 class="project-name">Greene</h4>
@@ -142,7 +451,8 @@
           </a>
           <a class="project-card" href="./portfolio/gamestats" data-reveal>
             <div class="project-thumb">
-              <img src="https://framerusercontent.com/images/L14IOlqrdLjRNTB4n357IxyuVg.png" alt="Gamestats project" loading="lazy">
+              <img src="https://framerusercontent.com/images/L14IOlqrdLjRNTB4n357IxyuVg.png" alt="Gamestats project"
+                loading="lazy">
             </div>
             <div class="project-info">
               <h4 class="project-name">Gamestats</h4>
@@ -154,7 +464,8 @@
           </a>
           <a class="project-card" href="./portfolio/type" data-reveal>
             <div class="project-thumb">
-              <img src="https://framerusercontent.com/images/5TkpmdKQOfciBb2le6Zf468LSNU.png" alt="Type project" loading="lazy">
+              <img src="https://framerusercontent.com/images/5TkpmdKQOfciBb2le6Zf468LSNU.png" alt="Type project"
+                loading="lazy">
             </div>
             <div class="project-info">
               <h4 class="project-name">Type</h4>
@@ -166,7 +477,8 @@
           </a>
           <a class="project-card" href="./portfolio/eau" data-reveal>
             <div class="project-thumb">
-              <img src="https://framerusercontent.com/images/HpLGaLKCLF5GR7jTsKmSHilk.png" alt="Eau project" loading="lazy">
+              <img src="https://framerusercontent.com/images/HpLGaLKCLF5GR7jTsKmSHilk.png" alt="Eau project"
+                loading="lazy">
             </div>
             <div class="project-info">
               <h4 class="project-name">Eau</h4>
@@ -178,7 +490,8 @@
           </a>
           <a class="project-card" href="./portfolio/branding" data-reveal>
             <div class="project-thumb">
-              <img src="https://framerusercontent.com/images/nnniC4XPmptlrahsrsrNUbwMjP0.png" alt="Vita project" loading="lazy">
+              <img src="https://framerusercontent.com/images/nnniC4XPmptlrahsrsrNUbwMjP0.png" alt="Vita project"
+                loading="lazy">
             </div>
             <div class="project-info">
               <h4 class="project-name">Vita</h4>
@@ -192,51 +505,33 @@
       </div>
     </section>
 
-    <section class="about" id="about">
-      <div class="about-inner" data-reveal>
-        <div class="section-label">
-          <span class="label-num">[01]</span>
-          <span>Who we are</span>
-        </div>
-        <h2 class="section-h2"><span class="h2-gray">We’re a small team of designers passionate about creating user-focused digital solutions.</span> Whether it’s a bold website or a detailed app interface, we’re here to make your ideas shine.</h2>
-        <div class="quote-card" data-reveal>
-          <blockquote>" Design is about solving problems with creativity. At our studio, we craft user-focused digital experiences. Leading this talented team is a privilege — and we’re passionate about meaningful design. "</blockquote>
-          <div class="quote-creds">
-            <img src="https://framerusercontent.com/images/M9RM9UnQX9RMT4SoGtGwWnvR1o.png" alt="Emma" loading="lazy">
-            <div class="quote-creds-text">
-              <span class="name-chip">Emma</span>
-              <span class="role">Senior Designer</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="services" id="services">
       <div class="services-inner" data-reveal>
         <div class="section-label">
-          <span class="label-num">[02]</span>
+          <span class="label-num">[05]</span>
           <span>Services</span>
         </div>
-        <h2 class="section-h2"><span class="h2-gray">Every service we offer is tailored to meet your unique goals,</span> ensuring a seamless blend of creativity and functionality.</h2>
+        <h2 class="section-h2"><span class="h2-gray">Every service we offer is tailored to meet your unique
+            goals,</span> ensuring a seamless blend of creativity and functionality.</h2>
         <div class="service-list">
           <div class="service-row" data-reveal>
             <div class="service-title">
               <svg class="service-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <circle cx="12" cy="12" r="8.5" stroke="#000" stroke-width="1.5"/>
-                <circle cx="12" cy="12" r="1.7" fill="#000"/>
+                <circle cx="12" cy="12" r="8.5" stroke="#000" stroke-width="1.5" />
+                <circle cx="12" cy="12" r="1.7" fill="#000" />
               </svg>
               <span>Web Design</span>
             </div>
             <div class="service-tags">
-              <span>Websites</span><span>Landing Pages</span><span>Front End</span><span>Framer Development</span><span>Animation</span>
+              <span>Websites</span><span>Landing Pages</span><span>Front End</span><span>Framer
+                Development</span><span>Animation</span>
             </div>
           </div>
           <div class="service-row" data-reveal>
             <div class="service-title">
               <svg class="service-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <circle cx="12" cy="12" r="8.5" stroke="#000" stroke-width="1.5"/>
-                <circle cx="12" cy="12" r="1.7" fill="#000"/>
+                <circle cx="12" cy="12" r="8.5" stroke="#000" stroke-width="1.5" />
+                <circle cx="12" cy="12" r="1.7" fill="#000" />
               </svg>
               <span>UX/UI Design</span>
             </div>
@@ -247,8 +542,8 @@
           <div class="service-row" data-reveal>
             <div class="service-title">
               <svg class="service-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <circle cx="12" cy="12" r="8.5" stroke="#000" stroke-width="1.5"/>
-                <circle cx="12" cy="12" r="1.7" fill="#000"/>
+                <circle cx="12" cy="12" r="8.5" stroke="#000" stroke-width="1.5" />
+                <circle cx="12" cy="12" r="1.7" fill="#000" />
               </svg>
               <span>Branding</span>
             </div>
@@ -259,72 +554,145 @@
           <div class="service-row" data-reveal>
             <div class="service-title">
               <svg class="service-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <circle cx="12" cy="12" r="8.5" stroke="#000" stroke-width="1.5"/>
-                <circle cx="12" cy="12" r="1.7" fill="#000"/>
+                <circle cx="12" cy="12" r="8.5" stroke="#000" stroke-width="1.5" />
+                <circle cx="12" cy="12" r="1.7" fill="#000" />
               </svg>
               <span>Graphic Design</span>
             </div>
             <div class="service-tags">
-              <span>Illustrations</span><span>3D Graphics</span><span>Presentations</span><span>Visuals</span><span>Icons</span>
+              <span>Illustrations</span><span>3D
+                Graphics</span><span>Presentations</span><span>Visuals</span><span>Icons</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="awards" id="awards">
-      <div class="awards-inner" data-reveal>
-        <div class="section-label">
-          <span class="label-num">[03]</span>
-          <span>Awards &amp; Recognition</span>
+    <section class="faq" id="faq">
+      <div class="faq-inner" data-reveal>
+        <div class="faq-head">
+          <div class="section-label">
+            <span class="label-num">[06]</span>
+            <span>FAQ</span>
+          </div>
+          <h2 class="section-h2">Questions, answered.</h2>
         </div>
-        <h2 class="section-h2">0X is an award-winning design studio specializing in creating impactful digital experiences. Known for blending creativity with functionality, we’ve earned recognition for our <a class="inbody-link" href="./portfolio/gamestats">innovative work</a> in web design and development.</h2>
-        <div class="award-list">
-          <a class="award-row" href="https://www.webbyawards.com/" target="_blank" rel="noopener" data-reveal>
-            <div class="award-overlay" aria-hidden="true"></div>
-            <div class="award-info">
-              <div class="award-main">
-                <img class="award-logo" src="https://framerusercontent.com/images/id17WZnAK7HuOZ6FcUxvOyqPmd8.png" alt="Webby Gold Award" loading="lazy">
-                <span class="award-name">Webby Gold Award</span>
-              </div>
-              <div class="award-meta">
-                <span>Web Design</span><span>Branding</span><span>2025</span>
-              </div>
-            </div>
-            <svg class="award-arrow" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-              <path d="M8.5 19.5L19.5 8.5M19.5 8.5h-9M19.5 8.5v9" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-          <a class="award-row" href="https://awwwards.com" target="_blank" rel="noopener" data-reveal>
-            <div class="award-overlay" aria-hidden="true"></div>
-            <div class="award-info">
-              <div class="award-main">
-                <img class="award-logo" src="https://framerusercontent.com/images/j3aE6Govbwj7ty6CGRnCHHCGuUU.png" alt="Awwwards SOTD" loading="lazy">
-                <span class="award-name">Awwwards SOTD</span>
-              </div>
-              <div class="award-meta">
-                <span>UX/UI Design</span><span>Branding</span><span>2024</span>
+        <div class="faq-list">
+          <div class="faq-item open">
+            <button class="faq-toggle" type="button" aria-expanded="true" aria-controls="faq-1">
+              <span class="faq-question">What exactly does Univens do?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+              </svg>
+            </button>
+            <div class="faq-panel" id="faq-1">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">Univens helps businesses turn strategic objectives into execution by bringing
+                  together the technology, specialists, systems, and capabilities required to achieve them.</p>
               </div>
             </div>
-            <svg class="award-arrow" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-              <path d="M8.5 19.5L19.5 8.5M19.5 8.5h-9M19.5 8.5v9" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-          <a class="award-row" href="https://framer.com" target="_blank" rel="noopener" data-reveal>
-            <div class="award-overlay" aria-hidden="true"></div>
-            <div class="award-info">
-              <div class="award-main">
-                <img class="award-logo" src="https://framerusercontent.com/images/q8FwRey29iSM87nqoUK9BF3AHNQ.jpg" alt="Framer Site of the Month" loading="lazy">
-                <span class="award-name">Framer Site of the Month</span>
-              </div>
-              <div class="award-meta">
-                <span>Web Design</span><span>Animations</span><span>2024</span>
+          </div>
+          <div class="faq-item">
+            <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-2">
+              <span class="faq-question">Is Univens a technology company or a growth agency?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+              </svg>
+            </button>
+            <div class="faq-panel" id="faq-2">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">Univens operates at the intersection of strategy and execution. We provide
+                  technology, digital infrastructure, product development, AI, automation, IoT, robotics, marketing
+                  systems, and specialised execution based on what the business objective requires.</p>
               </div>
             </div>
-            <svg class="award-arrow" width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-              <path d="M8.5 19.5L19.5 8.5M19.5 8.5h-9M19.5 8.5v9" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
+          </div>
+          <div class="faq-item">
+            <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-3">
+              <span class="faq-question">Do you work with existing internal teams?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+              </svg>
+            </button>
+            <div class="faq-panel" id="faq-3">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">Yes. Univens can work alongside internal teams, consultants, agencies, or other
+                  specialists. The engagement model is structured around the existing business environment.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-4">
+              <span class="faq-question">Can you work as a technical partner for another agency or consultant?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+              </svg>
+            </button>
+            <div class="faq-panel" id="faq-4">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">Yes. We can operate as a technical execution partner, including white-label and
+                  ongoing engagement models, while the existing partner retains its client relationship.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-5">
+              <span class="faq-question">Do you only work on individual projects?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+              </svg>
+            </button>
+            <div class="faq-panel" id="faq-5">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">No. Our engagements can include project-based implementation as well as ongoing
+                  monthly execution and strategic support.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-6">
+              <span class="faq-question">How do you decide which specialists are involved?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+              </svg>
+            </button>
+            <div class="faq-panel" id="faq-6">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">The team is assembled according to the business objective, technical
+                  requirements, and scope of the engagement. We do not force every requirement into a fixed team
+                  structure.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-7">
+              <span class="faq-question">What technologies do you work with?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+              </svg>
+            </button>
+            <div class="faq-panel" id="faq-7">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">Our technology capabilities include platforms and frameworks such as WordPress,
+                  Next.js, Headless CMS architectures, AI systems, automation technologies, IoT, robotics, and related
+                  digital infrastructure. The technology choice depends on the requirements of the business.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-toggle" type="button" aria-expanded="false" aria-controls="faq-8">
+              <span class="faq-question">Do you work with startups and growing businesses?</span>
+              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+              </svg>
+            </button>
+            <div class="faq-panel" id="faq-8">
+              <div class="faq-panel-inner">
+                <p class="faq-answer">Yes. Univens works with startups, growing businesses, institutions, consultants,
+                  agencies, and leadership teams that require additional execution capability.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -333,42 +701,60 @@
   <footer class="footer">
     <div class="footer-card">
       <div class="footer-content">
-        <div class="footer-top">
-          <div class="footer-title">
-            <div class="footer-text">
-              <div class="hero-avatars footer-avatars" aria-hidden="true">
-                <span class="avatar av-1"><img src="https://framerusercontent.com/images/EnP5OAvGhDlEWaHKl1lwzDWY.png" alt=""></span>
-                <span class="avatar av-2"><img src="https://framerusercontent.com/images/z3mSe8kY7iBZK25oZet9FE5wD8.png" alt=""></span>
-                <span class="avatar av-3"><img src="https://framerusercontent.com/images/SOZjwGb8G0yUPC9kXmiRySTksdE.png" alt=""></span>
-              </div>
-              <h2 class="footer-h2">Let’s discuss how we can make your product better!</h2>
-            </div>
-            <a class="btn-light" href="./contact">Get in touch</a>
+        <div class="footer-title">
+          <div class="footer-text">
+            <h2 class="footer-h2">Let’s turn your objective into <em class="footer-em">execution.</em></h2>
           </div>
-          <div class="footer-bottom">
-            <div class="footer-links">
-              <span class="f-gray">Follow us on</span>
+          <a class="btn-light" href="./contact">Start a conversation</a>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-brand">
+            <a class="footer-brand-link" href="./"><img class="logo-img footer-logo-img" src="public/logo-dark.svg"
+                alt="Univens"></a>
+            <p class="footer-tagline">Strategy, technology, specialists, and execution — assembled around what your
+              business needs to achieve.</p>
+          </div>
+          <nav class="footer-col" aria-label="Footer">
+            <span class="footer-col-title">Explore</span>
+            <a href="./#about">About</a>
+            <a href="./#solutions">Solutions</a>
+            <a href="./#case-studies">Work</a>
+            <a href="./#services">Services</a>
+            <a href="./#faq">FAQ</a>
+          </nav>
+          <div class="footer-col">
+            <span class="footer-col-title">Get in touch</span>
+            <a href="mailto:hello@univens.com">hello@univens.com</a>
+            <a href="./contact">Start a project</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">Follow us</span>
+            <div class="footer-social-links">
               <a class="social-pill" href="https://x.com" target="_blank" rel="noopener" aria-label="X">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/>
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z" />
                 </svg>
               </a>
-              <span class="f-gray">or get in touch on</span>
               <a class="social-pill" href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
-                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" />
                 </svg>
               </a>
             </div>
-            <span class="f-copy">©2025 Small Studio</span>
-            <span class="live-date" id="liveDate">Wednesday, 2/5/2025</span>
           </div>
         </div>
+        <div class="footer-meta">
+          <span class="f-copy">©<span id="year">2026</span> Univens</span>
+          <span class="live-date" id="liveDate">Wednesday, 2/5/2025</span>
+        </div>
       </div>
-      <h1 class="watermark" aria-hidden="true">0xStudio</h1>
+      <h1 class="watermark" aria-hidden="true">Univens</h1>
     </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
